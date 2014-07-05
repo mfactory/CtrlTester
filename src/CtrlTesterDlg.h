@@ -4,6 +4,7 @@
 
 #pragma once
 #include "xBrowser.h"
+#include "xButton.h"
 
 // CCtrlTesterDlg ダイアログ
 class CCtrlTesterDlg : public CDialog
@@ -30,5 +31,7 @@ protected:
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
 
+public:
 	CxBrowser m_br;
+	CxButton m_btn1;
 };

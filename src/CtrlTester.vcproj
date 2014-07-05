@@ -246,6 +246,18 @@
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
 			<File
+				RelativePath=".\res\bitmap1.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\res\bitmap2.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\res\bitmap3.bmp"
+				>
+			</File>
+			<File
 				RelativePath=".\res\CtrlTester.ico"
 				>
 			</File>
@@ -269,8 +281,20 @@
 				RelativePath=".\xBrowser.h"
 				>
 			</File>
+			<File
+				RelativePath=".\xButton.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\xButton.h"
+				>
+			</File>
 		</Filter>
 	</Files>
 	<Globals>
+		<Global
+			Name="RESOURCE_FILE"
+			Value="CtrlTester.rc"
+		/>
 	</Globals>
 </VisualStudioProject>

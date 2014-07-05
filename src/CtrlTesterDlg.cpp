@@ -56,6 +56,7 @@ CCtrlTesterDlg::CCtrlTesterDlg(CWnd* pParent /*=NULL*/)
 void CCtrlTesterDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialog::DoDataExchange(pDX);
+	DDX_Control(pDX, IDC_BUTTON1, m_btn1);
 }
 
 BEGIN_MESSAGE_MAP(CCtrlTesterDlg, CDialog)
@@ -97,9 +98,18 @@ BOOL CCtrlTesterDlg::OnInitDialog()
 	SetIcon(m_hIcon, TRUE);			// 大きいアイコンの設定
 	SetIcon(m_hIcon, FALSE);		// 小さいアイコンの設定
 
+	//-------------------------------------
 	// TODO: 初期化をここに追加します。
+	//-------------------------------------
+
+	// browser
 	m_br.CreateFromControl( this, IDC_BROWSER1 );
 	m_br.Navigate( _T( "http://yahoo.co.jp" ) );
+
+	// button
+	m_btn1.SetFaceColor( RGB( 255, 200, 100 ) );
+	m_btn1.SetImage( IDB_BITMAP1, IDB_BITMAP2, IDB_BITMAP3 );
+	m_btn1.SetStdImage( CMenuImages::IdArrowDown );
 
 	return TRUE;  // フォーカスをコントロールに設定した場合を除き、TRUE を返します。
 }
