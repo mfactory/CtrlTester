@@ -34,4 +34,7 @@ protected:
 public:
 	CxBrowser m_br;
 	CxButton m_btn1;
+	CxButton m_btnRadio1;
+	CxButton m_btnRadio2;
+	CxButton m_btnRadio3;
 };

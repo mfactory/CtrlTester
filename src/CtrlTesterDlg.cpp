@@ -57,6 +57,9 @@ void CCtrlTesterDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialog::DoDataExchange(pDX);
 	DDX_Control(pDX, IDC_BUTTON1, m_btn1);
+	DDX_Control(pDX, IDC_RADIO1, m_btnRadio1);
+	DDX_Control(pDX, IDC_RADIO2, m_btnRadio2);
+	DDX_Control(pDX, IDC_RADIO3, m_btnRadio3);
 }
 
 BEGIN_MESSAGE_MAP(CCtrlTesterDlg, CDialog)
@@ -107,9 +110,9 @@ BOOL CCtrlTesterDlg::OnInitDialog()
 	m_br.Navigate( _T( "http://yahoo.co.jp" ) );
 
 	// button
-	m_btn1.SetFaceColor( RGB( 255, 200, 100 ) );
-	m_btn1.SetImage( IDB_BITMAP1, IDB_BITMAP2, IDB_BITMAP3 );
-	m_btn1.SetStdImage( CMenuImages::IdArrowDown );
+	//m_btn1.SetFaceColor( RGB( 255, 200, 100 ) );
+	//m_btn1.SetImage( IDB_BITMAP1, IDB_BITMAP2, IDB_BITMAP3 );
+	//m_btn1.SetStdImage( CMenuImages::IdArrowRight );
 
 	return TRUE;  // フォーカスをコントロールに設定した場合を除き、TRUE を返します。
 }
